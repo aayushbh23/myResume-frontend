@@ -1,0 +1,3 @@
+/* Global tweaks */
+:root { scroll-behavior: smooth; }
+main { min-height: 70vh; }

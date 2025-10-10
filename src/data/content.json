@@ -1,0 +1,37 @@
+{
+  "name": "Your Name",
+  "title": "Frontend Engineer",
+  "location": "Melbourne, AU",
+  "summary": "Engineer focused on accessible, high-performance UIs.",
+  "links": {
+    "email": "you@example.com",
+    "github": "https://github.com/you",
+    "linkedin": "https://linkedin.com/in/you",
+    "website": "https://you.dev"
+  },
+  "skills": ["React", "Redux", "TypeScript", "Node", "CSS", "Testing"],
+  "projects": [
+    {
+      "name": "Project One",
+      "description": "A neat thing.",
+      "tech": ["React", "Vite"],
+      "url": "https://example.com",
+      "repo": "https://github.com/you/project-one"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Company A",
+      "role": "Frontend Engineer",
+      "start": "2022-01",
+      "end": "Present",
+      "highlights": [
+        "Built a design system in React.",
+        "Improved Lighthouse perf to 95+."
+      ]
+    }
+  ],
+  "education": [
+    { "school": "Uni Name", "degree": "B.Sc. CS", "year": "2020" }
+  ]
+}

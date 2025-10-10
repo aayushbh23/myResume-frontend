@@ -1,8 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const initialState = {
-  theme: "light",     // "light" | "dark"
-  navOpen: false,     // mobile nav state
+type UIState = {
+  theme: "light" | "dark";
+  navOpen: boolean;
+};
+
+const initialState: UIState = {
+  theme: "light",
+  navOpen: false,
 };
 
 const uiSlice = createSlice({
@@ -12,7 +17,7 @@ const uiSlice = createSlice({
     toggleTheme(state) {
       state.theme = state.theme === "light" ? "dark" : "light";
     },
-    setNavOpen(state, action) {
+    setNavOpen(state, action: PayloadAction<boolean>) {
       state.navOpen = action.payload;
     },
   },

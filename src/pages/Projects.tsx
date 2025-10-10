@@ -1,11 +1,14 @@
-import content from "../data/content.json";
+import content from "@/data/content.json";
+import type { Content } from "@/types/content";
+
+const data = content as Content;
 
 export default function Projects() {
   return (
     <section>
       <h2 className="mb-4">Projects</h2>
       <div className="row g-4">
-        {content.projects.map((p) => (
+        {data.projects.map((p) => (
           <div className="col-md-6" key={p.name}>
             <div className="card h-100">
               <div className="card-body">

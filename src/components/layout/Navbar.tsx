@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { setNavOpen, toggleTheme } from "../../features/ui/uiSlice";
+import { setNavOpen, toggleTheme } from "@/features/ui/uiSlice";
+import { RootState } from "@/app/store";
 
 export default function Navbar() {
   const dispatch = useDispatch();
-  const { navOpen, theme } = useSelector((s) => s.ui);
+  const { navOpen, theme } = useSelector((s: RootState) => s.ui);
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom">

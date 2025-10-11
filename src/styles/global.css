@@ -1,3 +1,59 @@
 /* Global tweaks */
-:root { scroll-behavior: smooth; }
-main { min-height: 70vh; }
+/*:root {*/
+    /*--bs-primary: #ff0000; Custom primary color (red) */
+/*    --bs-success: #00ff00;*/
+
+/*    --primary: #FFEC2E;*/
+    /*--primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;*/
+/*    scroll-behavior: smooth;*/
+/*}*/
+/*main { min-height: 70vh; }*/
+
+
+:root {
+  /* === Brand palette === */
+  --bs-primary: #ff0000;
+  --bs-secondary: #00ff00;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+
+  /* === Custom additions === */
+  --bs-body-bg: #f9fafc;
+  --bs-body-color: #212529;
+  --bs-border-radius: 1rem;
+  --bs-link-color: var(--bs-primary);
+  --bs-link-hover-color: #004dcc;
+
+  /* Optional: shadow or accent color variables */
+  --accent-color: #ff6f00;
+  --section-bg: #ffffff;
+}
+
+/* You can override specific Bootstrap component styles globally */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #004dcc;
+  border-color: #004dcc;
+}
+
+/* Example: give cards a consistent shadow and radius */
+.card {
+  border: none;
+  border-radius: var(--bs-border-radius);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+

@@ -18,11 +18,8 @@ export default function Section({
   visuallyHiddenTitle = false,
   children,
 }: PropsWithChildren<SectionProps>) {
-  const theme = useSelector((s: RootState) => s.ui.theme);
-  const base = theme === "dark" ? "bg-dark text-white" : "bg-light";
-
   return (
-    <section id={id} className={`p-4 rounded-3 ${base} ${className}`.trim()}>
+    <section id={id} className={`p-4 rounded-3 ${className}`.trim()}>
       {title && (
         <header className="mb-3">
           <h2 className={visuallyHiddenTitle ? "visually-hidden" : "h3 m-0"}>{title}</h2>

@@ -12,11 +12,25 @@
   "skills": ["React", "Redux", "TypeScript", "Node", "CSS", "Testing"],
   "projects": [
     {
-      "name": "Project One",
-      "description": "A neat thing.",
-      "tech": ["React", "Vite"],
-      "url": "https://example.com",
-      "repo": "https://github.com/you/project-one"
+      "name": "MyPlants",
+      "description": "Demo Ecommerce store using ASP .NET CORE framework",
+      "tech": ["C#", "ASP", ".NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
+      "imageURL": "/MyPlants.png",
+      "projectURL": "https://github.com/aayushbh23/MyPlants"
+    },
+    {
+      "name": "MyPlants",
+      "description": "Demo Ecommerce store using ASP .NET CORE framework",
+      "tech": ["C#", "ASP", ".NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
+      "imageURL": "/MyPlants.png",
+      "projectURL": "https://github.com/aayushbh23/MyPlants"
+    },
+    {
+      "name": "MyPlants",
+      "description": "Demo Ecommerce store using ASP .NET CORE framework",
+      "tech": ["C#", "ASP", ".NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
+      "imageURL": "/MyPlants.png",
+      "projectURL": "https://github.com/aayushbh23/MyPlants"
     }
   ],
   "experience": [

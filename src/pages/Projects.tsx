@@ -7,23 +7,27 @@ export default function Projects() {
   return (
     <section>
       <h2 className="mb-4">Projects</h2>
-      <div className="row g-4">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {data.projects.map((p) => (
-          <div className="col-md-6" key={p.name}>
-            <div className="card h-100">
-              <div className="card-body">
-                <h5 className="card-title">{p.name}</h5>
-                <p className="card-text">{p.description}</p>
-                <p className="small text-muted">{p.tech.join(" · ")}</p>
-              </div>
-              <div className="card-footer d-flex gap-2">
-                {p.url && <a className="btn btn-sm btn-primary" href={p.url} target="_blank" rel="noreferrer">Live</a>}
-                {p.repo && <a className="btn btn-sm btn-outline-secondary" href={p.repo} target="_blank" rel="noreferrer">Code</a>}
-              </div>
+          <div className="col" key={p.name}>
+                <div className="card h-100 border-success">
+                        <img className="card-img-top project-image"
+                             src={p.imageURL ?? "/placeholder.png"}
+                             alt={p.name} />
+                        <div className="card-body">
+                            <h5 className="card-title">{p.name}</h5>
+                            <p className="card-text text-muted">{p.description}</p>
+                        </div>
+                    <div className="card-footer d-flex justify-content-between align-items-center">
+                        <strong className="text-success">{p.tech.join(" · ")}</strong>
+                        {p.projectURL && <a href={p.projectURL} target="_blank" className="btn btn-sm btn-outline-success" role="button">Code</a>}
+                    </div>
+                </div>
             </div>
-          </div>
         ))}
       </div>
     </section>
   );
 }
+
+

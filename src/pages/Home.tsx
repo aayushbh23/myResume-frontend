@@ -6,14 +6,13 @@ const data = content as Content;
 export default function Home() {
   return (
     <section className="text-center">
-<img src="/profile_animated.svg" alt="Animated profile" />
-      {/*<img
+      <img
         className="rounded-circle mb-3"
         src="/profile.jpg"
         alt={data.name}
         width="120"
         height="120"
-      />*/}
+      />
       <h1 className="fw-bold">{data.name}</h1>
       <p className="text-muted">{data.title} • {data.location}</p>
       <p className="lead mx-auto" style={{ maxWidth: 720 }}>{data.summary}</p>

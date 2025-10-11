@@ -2,8 +2,8 @@ export type Project = {
   name: string;
   description: string;
   tech: string[];
-  url?: string;
-  repo?: string;
+  imageURL?: string;
+  projectURL?: string;
 };
 
 export type Experience = {

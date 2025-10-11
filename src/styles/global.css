@@ -38,6 +38,8 @@
   --section-bg: #ffffff;
 }
 
+main { min-height: 70vh; }
+
 /* You can override specific Bootstrap component styles globally */
 .btn-primary {
   background-color: var(--bs-primary);
@@ -50,10 +52,36 @@
   border-color: #004dcc;
 }
 
-/* Example: give cards a consistent shadow and radius */
-.card {
-  border: none;
-  border-radius: var(--bs-border-radius);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+.project-image{
+  height:200px;
+  object-fit:fill;
 }
+
+/*.project-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}*/
 

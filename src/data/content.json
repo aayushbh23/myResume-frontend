@@ -1,5 +1,5 @@
 {
-  "name": "Your Name",
+  "name": "Ayush Bhandari",
   "title": "Frontend Engineer",
   "location": "Melbourne, AU",
   "summary": "Engineer focused on accessible, high-performance UIs.",
@@ -9,7 +9,7 @@
     "linkedin": "https://linkedin.com/in/you",
     "website": "https://you.dev"
   },
-  "skills": ["React", "Redux", "TypeScript", "Node", "CSS", "Testing"],
+  "skills": ["Java", "Python", "JavaScript", "C#", "ASP.NET", "Angular", "React", "Redux", "TypeScript", "Node", "CSS"],
   "projects": [
     {
       "name": "MyPlants",

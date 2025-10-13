@@ -10,7 +10,8 @@ export default function Projects() {
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {data.projects.map((p) => (
           <div className="col" key={p.name}>
-                <div className="card h-100 border-success">
+                <div className="card h-100 border-success project-card">
+                 {p.projectURL && <a href={p.projectURL} target="_blank" className="text-decoration-none text-reset">
                         <img className="card-img-top project-image"
                              src={p.imageURL ?? "/placeholder.png"}
                              alt={p.name} />
@@ -20,8 +21,8 @@ export default function Projects() {
                         </div>
                     <div className="card-footer d-flex justify-content-between align-items-center">
                         <strong className="text-success">{p.tech.join(" · ")}</strong>
-                        {p.projectURL && <a href={p.projectURL} target="_blank" className="btn btn-sm btn-outline-success" role="button">Code</a>}
-                    </div>
+
+                    </div></a>}
                 </div>
             </div>
         ))}

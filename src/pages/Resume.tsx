@@ -20,7 +20,7 @@ export default function Resume() {
       <h2 className="mb-4">Education</h2>
         <ul className="list-unstyled m-0">
           {data.education.map((e) => (
-            <li key={e.school} className="mb-2">
+            <li key={e._id} className="mb-2">
               <strong>{e.school}</strong> — {e.degree} ({e.year})
             </li>
           ))}
@@ -31,7 +31,7 @@ export default function Resume() {
       <h2 className="mb-4">Experience</h2>
       <div className="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
         {data.experience.map((job) => (
-          <div className="col" key={job.company + job.role}>
+          <div className="col" key={job._id}>
                 <div className="card h-100 border-success project-card">
                 {job.companyURL && <a href={job.companyURL} target="_blank" className="text-decoration-none text-reset">
                       <div className="card-body d-flex justify-content-between align-items-start">

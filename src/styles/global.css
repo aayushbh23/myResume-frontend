@@ -99,3 +99,43 @@ main { min-height: 70vh; }
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
+
+/*.contact-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    z-index 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10;
+}*/
+
+.contact-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    z-index 0.3s ease;
+  position: relative;
+  border: 1px solid #198754;
+}
+
+.contact-card:hover {
+  border-top: 1px solid #198754;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10;
+  border-color: #198754;
+}
+
+
+/*.list-group .contact-card + .contact-card {
+  border-top: 1px solid #198754;
+}
+
+.list-group .contact-card:hover {
+  border-top: 1px solid #198754;
+}
+*/

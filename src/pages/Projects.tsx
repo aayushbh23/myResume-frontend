@@ -9,7 +9,7 @@ export default function Projects() {
       <h2 className="mb-4">Projects</h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {data.projects.map((p) => (
-          <div className="col" key={p.name}>
+          <div className="col" key={p._id}>
                 <div className="card h-100 border-success project-card">
                  {p.projectURL && <a href={p.projectURL} target="_blank" className="text-decoration-none text-reset">
                         <img className="card-img-top project-image"

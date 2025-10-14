@@ -9,71 +9,165 @@
     "website": "https://decorhub.com.au"
   },
   "skills": [{
-              "name": "Java",
-              "rating": 5
-            },{
-              "name": "Python",
-              "rating": 5
-            },{
-              "name": "JavaScript",
-              "rating": 5
-            },{
-              "name": "C#",
-              "rating": 5
-            },{
-              "name": "ASP.NET",
-              "rating": 5
-            },{
-              "name": "Angular",
-              "rating": 5
-            },{
-              "name": "React",
-              "rating": 4.5
-            },{
-              "name": "TypeScript",
-              "rating": 4
-            },{
-              "name": "Node.js",
-              "rating": 3.5
-            },{
-              "name": "CSS / SCSS",
-              "rating": 4.5
-            },{
-              "name": "Redux Toolkit",
-              "rating": 4
-            },{
-              "name": "Testing (Jest/RTL)",
-              "rating": 3
-            }
-    ],
+            "_id": "66fd1a0c9a2e4b1f3c7d8e0b",
+            "name": "Java",
+            "rating": 5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e11",
+            "name": "JavaScript",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e03",
+            "name": "PHP",
+            "rating": 3.5
+          },{
+            "_id": "68ee16884ff0f8ea590dc547",
+            "name": "Python",
+            "rating": 5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e05",
+            "name": "C#",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e06",
+            "name": "ASP.NET",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e07",
+            "name": "Blazor",
+            "rating": 4
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e12",
+            "name": "TypeScript",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e13",
+            "name": "React",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e14",
+            "name": "Redux",
+            "rating": 4
+          },{
+            "_id": "68ee16884ff0f8ea590dc548",
+            "name": "Node.js",
+            "rating": 3.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e15",
+            "name": "JSON",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e01",
+            "name": "WooCommerce",
+            "rating": 4
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e02",
+            "name": "WordPress",
+            "rating": 4
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e04",
+            "name": "MySQL",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e08",
+            "name": "SQLite",
+            "rating": 4
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e10",
+            "name": "H2DB",
+            "rating": 4
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e09",
+            "name": "MS SQL",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e0a",
+            "name": "LocalDB",
+            "rating": 4
+          },{
+            "_id": "68ee16884ff0f8ea590dc549",
+            "name": "CSS / SCSS",
+            "rating": 4.5
+          },{
+            "_id": "68ee16884ff0f8ea590dc54a",
+            "name": "Testing (Jest/RTL)",
+            "rating": 3
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e0c",
+            "name": "Maven",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e0d",
+            "name": "Spring Boot",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e0e",
+            "name": "Spring Data JPA",
+            "rating": 4.5
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e0f",
+            "name": "Thymeleaf",
+            "rating": 4
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e16",
+            "name": "JavaFX",
+            "rating": 4
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e17",
+            "name": "FXML",
+            "rating": 4
+          },{
+            "_id": "66fd1a0c9a2e4b1f3c7d8e18",
+            "name": "SceneBuilder",
+            "rating": 4
+  }],
   "projects": [{
+      "_id":"68ee10c04ff0f8ea590dc537",
       "name": "Decor Hub",
       "description": "Ecommerce store using WooCommerce Wordpress",
       "tech": ["WooCommerce", "Wordpress", "PHP", "MySQL"],
       "imageURL": "/decorhub.png",
       "projectURL": "https://decorhub.com.au"
     },{
+      "_id":"68ee10c04ff0f8ea590dc538",
       "name": "MyPlants",
       "description": "Demo Ecommerce store using ASP .NET CORE framework",
       "tech": ["C#", "ASP.NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
       "imageURL": "/MyPlants.png",
       "projectURL": "https://github.com/aayushbh23/MyPlants"
     },{
+      "_id":"68ee10c04ff0f8ea590dc539",
       "name": "Audio Rating System",
       "description": "Audio Rating System with user authentication and iTunes API",
       "tech": ["Java", "Maven", "Spring Boot", "Spring Data JPA", "Thymeleaf", "H2DB"],
       "imageURL": "/audioratingsystem.png",
       "projectURL": "https://github.com/aayushbh23/Audio-Rating-System"
     },{
+      "_id":"68ee10c04ff0f8ea590dc53a",
       "name": "My Resume",
       "description": "Front End for My Online Resume",
       "tech": ["JavaScript", "TypeScript", "React", "Redux", "JSON"],
       "imageURL": "/myresume.png",
       "projectURL": "https://github.com/aayushbh23/myResume-frontend"
+    },{
+      "_id":"68ee10c04ff0f8ea590dc53b",
+      "name": "Whiskey Information System",
+      "description": "JavaFX-based desktop application that enables users to query and view whiskey data based on various attributes such as distillery, age, region and price.",
+      "tech": ["Java", "JavaFX", "FXML", "Maven", "MySQL", "SceneBuilder"],
+      "imageURL": "/whiskeyinformationsystem.png",
+      "projectURL": "https://github.com/aayushbh23/WhiskeyInformationSystem"
+    },{
+      "_id":"68ee18b34ff0f8ea590dc54e",
+      "name": "Student Grade System",
+      "description": "JavaFX-based desktop application for managing, analyzing and displaying student grade information.",
+      "tech": ["Java", "JavaFX", "FXML", "Maven", "MySQL", "SceneBuilder"],
+      "imageURL": "/studentgradesystem.png",
+      "projectURL": "https://github.com/aayushbh23/StudentGradeSystem"
     }
   ],
   "experience": [
     {
+      "_id":"68ee10c04ff0f8ea590dc536",
       "company": "Decor Hub",
       "role": "Web Developer",
       "start": "2019",
@@ -85,9 +179,21 @@
       ]
     }
   ],
-  "education": [
-    { "school": "Central Queensland University", "degree": "B.IT - Application Development", "year": "Graduating in 2026" },
-    { "school": "Skyline International College", "degree": "Advanced Diploma - Network Security", "year": "2020" },
-    { "school": "Skyline International College", "degree": "Diploma - Information Technology", "year": "2019" }
+  "education": [{
+      "_id":"68ee10c04ff0f8ea590dc533",
+      "school": "Central Queensland University",
+      "degree": "B.IT - Application Development",
+      "year": "Graduating in 2026"
+    },{
+      "_id":"68ee10c04ff0f8ea590dc534",
+      "school": "Skyline International College",
+      "degree": "Advanced Diploma - Network Security",
+      "year": "2020"
+    },{
+      "_id":"68ee10c04ff0f8ea590dc535",
+      "school": "Skyline International College",
+      "degree": "Diploma - Information Technology",
+      "year": "2019"
+    }
   ]
 }

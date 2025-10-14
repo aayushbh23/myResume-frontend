@@ -1,4 +1,5 @@
 export type Project = {
+  _id: string;
   name: string;
   description: string;
   tech: string[];
@@ -7,6 +8,7 @@ export type Project = {
 };
 
 export type Experience = {
+  _id: string;
   company: string;
   role: string;
   start: string; // YYYY-MM
@@ -15,12 +17,14 @@ export type Experience = {
 };
 
 export type Education = {
+  _id: string;
   school: string;
   degree: string;
   year: string;
 };
 
 export type Skills = {
+  _id: string;
   name: string;
   rating: int;
 };

@@ -11,8 +11,8 @@ export type Experience = {
   _id: string;
   company: string;
   role: string;
-  start: string; // YYYY-MM
-  end: string;   // "Present" or YYYY-MM
+  start: string; // YYYY
+  end: string;   // "Present" or YYYY
   highlights: string[];
 };
 

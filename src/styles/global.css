@@ -1,22 +1,4 @@
-/* Global tweaks */
-/*:root {*/
-    /*--bs-primary: #ff0000; Custom primary color (red) */
-/*    --bs-success: #00ff00;*/
-
-/*    --primary: #FFEC2E;*/
-    /*--primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;*/
-/*    scroll-behavior: smooth;*/
-/*}*/
-/*main { min-height: 70vh; }*/
-
-
 :root {
-  /* === Brand palette === */
   --bs-primary: #ff0000;
   --bs-secondary: #00ff00;
   --bs-success: #198754;
@@ -25,22 +7,19 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-
-  /* === Custom additions === */
   --bs-body-bg: #f9fafc;
   --bs-body-color: #212529;
   --bs-border-radius: 1rem;
   --bs-link-color: var(--bs-primary);
   --bs-link-hover-color: #004dcc;
-
-  /* Optional: shadow or accent color variables */
   --accent-color: #ff6f00;
   --section-bg: #ffffff;
 }
 
-main { min-height: 70vh; }
+main {
+  min-height: 70vh;
+}
 
-/* You can override specific Bootstrap component styles globally */
 .btn-primary {
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
@@ -57,34 +36,6 @@ main { min-height: 70vh; }
   object-fit:fill;
 }
 
-/*.project-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    0deg,
-    transparent,
-    transparent 30%,
-    rgba(0,255,255,0.3)
-  );
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-  opacity: 0;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,255,255,0.5);
-}
-
-.project-card:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
-}*/
-
 .project-card {
   position: relative;
   z-index: 0;
@@ -99,19 +50,6 @@ main { min-height: 70vh; }
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
-
-/*.contact-card {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    z-index 0.3s ease;
-}
-
-.contact-card:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05) translateY(-5px);
-  z-index: 10;
-}*/
 
 .contact-card {
   transition:
@@ -129,13 +67,3 @@ main { min-height: 70vh; }
   z-index: 10;
   border-color: #198754;
 }
-
-
-/*.list-group .contact-card + .contact-card {
-  border-top: 1px solid #198754;
-}
-
-.list-group .contact-card:hover {
-  border-top: 1px solid #198754;
-}
-*/

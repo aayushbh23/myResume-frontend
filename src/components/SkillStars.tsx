@@ -2,7 +2,7 @@ import React from "react";
 
 type SkillStarsProps = {
   name: string;
-  rating: number; // 0 - 5 (supports halves like 3.5)
+  rating: number;
 };
 
 const Star = ({ type }: { type: "full" | "half" | "empty" }) => {
@@ -44,7 +44,6 @@ export const SkillStars: React.FC<SkillStarsProps> = ({ name, rating }) => {
 
   return (
     <div className="d-flex align-items-center justify-content-between py-2">
-      {/*<span className="fw-medium">{name}</span>*/}
       <div className="d-flex" aria-label={`${name} skill rating ${rating} out of 5`} title={`${rating}/5`}>
         {stars}
       </div>

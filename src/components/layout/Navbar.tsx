@@ -27,7 +27,7 @@ export default function Navbar() {
 
         <div className={`collapse navbar-collapse ${navOpen ? "show" : ""}`}>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item"><NavLink className="nav-link" to="/about">About</NavLink></li>
+            <li className="nav-item"><NavLink className="nav-link" to="/skills">Skills</NavLink></li>
             <li className="nav-item"><NavLink className="nav-link" to="/projects">Projects</NavLink></li>
             <li className="nav-item"><NavLink className="nav-link" to="/resume">Resume</NavLink></li>
             <li className="nav-item"><NavLink className="nav-link" to="/contact">Contact</NavLink></li>

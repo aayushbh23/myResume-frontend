@@ -1,34 +1,71 @@
 {
   "name": "Ayush Bhandari",
-  "title": "Frontend Engineer",
+  "title": "Web Developer",
   "location": "Melbourne, AU",
-  "summary": "Engineer focused on accessible, high-performance UIs.",
+  "summary": "Dedicated Web Developer with a passion for building seamless, high-performance web applications from concept to deployment.",
   "links": {
     "email": "you@example.com",
     "github": "https://github.com/you",
     "linkedin": "https://linkedin.com/in/you",
     "website": "https://you.dev"
   },
-  "skills": ["Java", "Python", "JavaScript", "C#", "ASP.NET", "Angular", "React", "Redux", "TypeScript", "Node", "CSS"],
+  "skills": [{
+              "name": "Java",
+              "rating": 5
+            },{
+              "name": "Python",
+              "rating": 5
+            },{
+              "name": "JavaScript",
+              "rating": 5
+            },{
+              "name": "C#",
+              "rating": 5
+            },{
+              "name": "ASP.NET",
+              "rating": 5
+            },{
+              "name": "Angular",
+              "rating": 5
+            },{
+              "name": "React",
+              "rating": 4.5
+            },{
+              "name": "TypeScript",
+              "rating": 4
+            },{
+              "name": "Node.js",
+              "rating": 3.5
+            },{
+              "name": "CSS / SCSS",
+              "rating": 4.5
+            },{
+              "name": "Redux Toolkit",
+              "rating": 4
+            },{
+              "name": "Testing (Jest/RTL)",
+              "rating": 3
+            }
+    ],
   "projects": [
     {
       "name": "MyPlants",
       "description": "Demo Ecommerce store using ASP .NET CORE framework",
-      "tech": ["C#", "ASP", ".NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
+      "tech": ["C#", "ASP.NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
       "imageURL": "/MyPlants.png",
       "projectURL": "https://github.com/aayushbh23/MyPlants"
     },
     {
       "name": "MyPlants",
       "description": "Demo Ecommerce store using ASP .NET CORE framework",
-      "tech": ["C#", "ASP", ".NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
+      "tech": ["C#", "ASP.NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
       "imageURL": "/MyPlants.png",
       "projectURL": "https://github.com/aayushbh23/MyPlants"
     },
     {
       "name": "MyPlants",
       "description": "Demo Ecommerce store using ASP .NET CORE framework",
-      "tech": ["C#", "ASP", ".NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
+      "tech": ["C#", "ASP.NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
       "imageURL": "/MyPlants.png",
       "projectURL": "https://github.com/aayushbh23/MyPlants"
     }

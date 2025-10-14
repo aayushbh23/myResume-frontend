@@ -20,6 +20,11 @@ export type Education = {
   year: string;
 };
 
+export type Skills = {
+  name: string;
+  rating: int;
+};
+
 export type Content = {
   name: string;
   title: string;
@@ -31,7 +36,7 @@ export type Content = {
     linkedin?: string;
     website?: string;
   };
-  skills: string[];
+  skills: Skills[];
   projects: Project[];
   experience: Experience[];
   education: Education[];

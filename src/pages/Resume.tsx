@@ -15,7 +15,20 @@ function DateRange({ start, end }: { start: string; end: string }) {
 export default function Resume() {
   return (
     <div className="d-flex flex-column gap-4">
-      <Section id="experience" title="Experience">
+
+      <section id="education">
+      <h2 className="mb-4">Education</h2>
+        <ul className="list-unstyled m-0">
+          {data.education.map((e) => (
+            <li key={e.school} className="mb-2">
+              <strong>{e.school}</strong> — {e.degree} ({e.year})
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="experience">
+      <h2 className="mb-4">Experience</h2>
         <div className="vstack gap-4">
           {data.experience.map((job) => (
             <article key={job.company + job.role} className="border rounded-3 p-3 bg-white">
@@ -34,45 +47,8 @@ export default function Resume() {
             </article>
           ))}
         </div>
-      </Section>
+      </section>
 
-      <Section id="projects" title="Selected Projects">
-        <div className="row g-4">
-          {data.projects.map((p) => (
-            <div className="col-md-6" key={p.name}>
-              <div className="card h-100">
-                <div className="card-body">
-                  <h4 className="card-title h5">{p.name}</h4>
-                  <p className="card-text">{p.description}</p>
-                  <p className="small text-muted">{p.tech.join(" · ")}</p>
-                </div>
-                <div className="card-footer d-flex gap-2">
-                  {p.url && (
-                    <a className="btn btn-sm btn-primary" href={p.url} target="_blank" rel="noreferrer">
-                      Live
-                    </a>
-                  )}
-                  {p.repo && (
-                    <a className="btn btn-sm btn-outline-secondary" href={p.repo} target="_blank" rel="noreferrer">
-                      Code
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      <Section id="education" title="Education">
-        <ul className="list-unstyled m-0">
-          {data.education.map((e) => (
-            <li key={e.school} className="mb-2">
-              <strong>{e.school}</strong> — {e.degree} ({e.year})
-            </li>
-          ))}
-        </ul>
-      </Section>
     </div>
   );
 }

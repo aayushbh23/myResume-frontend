@@ -44,7 +44,7 @@ export const SkillStars: React.FC<SkillStarsProps> = ({ name, rating }) => {
 
   return (
     <div className="d-flex align-items-center justify-content-between py-2">
-      <span className="fw-medium">{name}</span>
+      {/*<span className="fw-medium">{name}</span>*/}
       <div className="d-flex" aria-label={`${name} skill rating ${rating} out of 5`} title={`${rating}/5`}>
         {stars}
       </div>

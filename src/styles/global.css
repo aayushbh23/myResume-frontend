@@ -16,8 +16,24 @@
   --section-bg: #ffffff;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 main {
   min-height: 70vh;
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .btn-primary {
@@ -31,9 +47,9 @@ main {
   border-color: #004dcc;
 }
 
-.project-image{
-  height:200px;
-  object-fit:fill;
+.project-image {
+  height: 200px;
+  object-fit: fill;
 }
 
 .project-card {

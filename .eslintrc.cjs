@@ -9,11 +9,11 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
   ],
   settings: { react: { version: "detect" } },
   rules: {
     "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-explicit-any": "warn"
-  }
+    "@typescript-eslint/no-explicit-any": "warn",
+  },
 };

@@ -10,9 +10,10 @@ export type Project = {
 export type Experience = {
   _id: string;
   company: string;
+  companyURL?: string;
   role: string;
   start: string; // YYYY
-  end: string;   // "Present" or YYYY
+  end: string; // "Present" or YYYY
   highlights: string[];
 };
 
@@ -26,7 +27,7 @@ export type Education = {
 export type Skills = {
   _id: string;
   name: string;
-  rating: int;
+  rating: number;
 };
 
 export type Content = {

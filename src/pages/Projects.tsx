@@ -10,25 +10,32 @@ export default function Projects() {
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {data.projects.map((p) => (
           <div className="col" key={p._id}>
-                <div className="card h-100 border-success project-card">
-                 {p.projectURL && <a href={p.projectURL} target="_blank" className="text-decoration-none text-reset">
-                        <img className="card-img-top project-image"
-                             src={p.imageURL ?? "/placeholder.png"}
-                             alt={p.name} />
-                        <div className="card-body">
-                            <h5 className="card-title">{p.name}</h5>
-                            <p className="card-text text-muted">{p.description}</p>
-                        </div>
-                    <div className="card-footer d-flex justify-content-between align-items-center">
-                        <strong className="text-success">{p.tech.join(" · ")}</strong>
-
-                    </div></a>}
-                </div>
+            <div className="card h-100 border-success project-card">
+              {p.projectURL && (
+                <a
+                  href={p.projectURL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none text-reset"
+                >
+                  <img
+                    className="card-img-top project-image"
+                    src={p.imageURL ?? "/placeholder.png"}
+                    alt={p.name}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{p.name}</h5>
+                    <p className="card-text text-muted">{p.description}</p>
+                  </div>
+                  <div className="card-footer d-flex justify-content-between align-items-center">
+                    <strong className="text-success">{p.tech.join(" · ")}</strong>
+                  </div>
+                </a>
+              )}
             </div>
+          </div>
         ))}
       </div>
     </section>
   );
 }
-
-

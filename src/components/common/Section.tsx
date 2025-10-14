@@ -1,6 +1,4 @@
 import { PropsWithChildren } from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "@/app/store";
 
 type SectionProps = {
   id?: string;

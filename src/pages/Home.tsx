@@ -8,7 +8,6 @@ export default function Home() {
 <section>
       <h2 className="mb-4"></h2>
   <div className="row align-items-center">
-    {/* Left side - Image */}
     <div className="col-auto">
       <img
         className="rounded-circle"
@@ -18,8 +17,6 @@ export default function Home() {
         height="120"
       />
     </div>
-
-    {/* Right side - Info */}
     <div className="col">
       <h1 className="fw-bold mb-1">{data.name}</h1>
       <p className="text-muted mb-2">
@@ -29,7 +26,7 @@ export default function Home() {
 
       <div className="d-flex flex-wrap gap-2">
         <a
-          className="btn btn-primary"
+          className="btn btn-outline-secondary"
           href={`mailto:${data.links.email}`}
         >
           Email

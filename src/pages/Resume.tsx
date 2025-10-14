@@ -29,25 +29,29 @@ export default function Resume() {
 
       <section id="experience">
       <h2 className="mb-4">Experience</h2>
-        <div className="vstack gap-4">
-          {data.experience.map((job) => (
-            <article key={job.company + job.role} className="border rounded-3 p-3 bg-white">
-              <header className="d-flex justify-content-between align-items-start flex-column flex-md-row">
-                <div>
-                  <h3 className="h5 m-0">{job.role}</h3>
-                  <p className="m-0 text-muted">{job.company}</p>
+      <div className="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
+        {data.experience.map((job) => (
+          <div className="col" key={job.company + job.role}>
+                <div className="card h-100 border-success project-card">
+                {job.companyURL && <a href={job.companyURL} target="_blank" className="text-decoration-none text-reset">
+                      <div className="card-body d-flex justify-content-between align-items-start">
+                           <div> <h5 className="card-title">{job.role}</h5>
+                            <p className="m-0 text-muted">{job.company}</p></div>
+                            <DateRange start={job.start} end={job.end} />
+                        </div>
+                    <div className="card-footer d-flex">
+                        <ul className="mt-3 mb-0">
+                          {job.highlights.map((h, i) => (
+                            <li key={i}>{h}</li>
+                          ))}
+                        </ul>
+                    </div></a>}
                 </div>
-                <DateRange start={job.start} end={job.end} />
-              </header>
-              <ul className="mt-3 mb-0">
-                {job.highlights.map((h, i) => (
-                  <li key={i}>{h}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
-      </section>
+            </div>
+        ))}
+      </div>
+
+    </section>
 
     </div>
   );

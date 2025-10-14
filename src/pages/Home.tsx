@@ -42,14 +42,6 @@ export default function Home() {
         >
           GitHub
         </a>
-        <a
-          className="btn btn-outline-secondary"
-          href={data.links.linkedin}
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn
-        </a>
       </div>
     </div>
   </div>

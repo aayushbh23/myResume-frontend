@@ -19,11 +19,6 @@ export default function Contact() {
                 <i className="bi bi-github me-2" /> {data.links.github}
               </a>
             )}
-            {data.links.linkedin && (
-              <a className="list-group-item list-group-item-action border-success" href={data.links.linkedin} target="_blank" rel="noreferrer">
-                <i className="bi bi-linkedin me-2" /> {data.links.linkedin}
-              </a>
-            )}
             {data.links.website && (
               <a className="list-group-item list-group-item-action border-success" href={data.links.website} target="_blank" rel="noreferrer">
                 <i className="bi bi-globe me-2" /> {data.links.website}

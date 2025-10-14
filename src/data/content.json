@@ -2,12 +2,11 @@
   "name": "Ayush Bhandari",
   "title": "Web Developer",
   "location": "Melbourne, AU",
-  "summary": "Dedicated Web Developer with a passion for building seamless, high-performance web applications from concept to deployment.",
+  "summary": "Web Developer with a passion for building high-performance web applications.",
   "links": {
-    "email": "you@example.com",
-    "github": "https://github.com/you",
-    "linkedin": "https://linkedin.com/in/you",
-    "website": "https://you.dev"
+    "email": "aayushbh23@gmail.com",
+    "github": "https://github.com/aayushbh23",
+    "website": "https://decorhub.com.au"
   },
   "skills": [{
               "name": "Java",
@@ -47,42 +46,48 @@
               "rating": 3
             }
     ],
-  "projects": [
-    {
+  "projects": [{
+      "name": "Decor Hub",
+      "description": "Ecommerce store using WooCommerce Wordpress",
+      "tech": ["WooCommerce", "Wordpress", "PHP", "MySQL"],
+      "imageURL": "/decorhub.png",
+      "projectURL": "https://decorhub.com.au"
+    },{
       "name": "MyPlants",
       "description": "Demo Ecommerce store using ASP .NET CORE framework",
       "tech": ["C#", "ASP.NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
       "imageURL": "/MyPlants.png",
       "projectURL": "https://github.com/aayushbh23/MyPlants"
-    },
-    {
-      "name": "MyPlants",
-      "description": "Demo Ecommerce store using ASP .NET CORE framework",
-      "tech": ["C#", "ASP.NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
-      "imageURL": "/MyPlants.png",
-      "projectURL": "https://github.com/aayushbh23/MyPlants"
-    },
-    {
-      "name": "MyPlants",
-      "description": "Demo Ecommerce store using ASP .NET CORE framework",
-      "tech": ["C#", "ASP.NET", "Blazor", "SQLite", "MS SQL", "LocalDB"],
-      "imageURL": "/MyPlants.png",
-      "projectURL": "https://github.com/aayushbh23/MyPlants"
+    },{
+      "name": "Audio Rating System",
+      "description": "Audio Rating System with user authentication and iTunes API",
+      "tech": ["Java", "Maven", "Spring Boot", "Spring Data JPA", "Thymeleaf", "H2DB"],
+      "imageURL": "/audioratingsystem.png",
+      "projectURL": "https://github.com/aayushbh23/Audio-Rating-System"
+    },{
+      "name": "My Resume",
+      "description": "Front End for My Online Resume",
+      "tech": ["JavaScript", "TypeScript", "React", "Redux", "JSON"],
+      "imageURL": "/myresume.png",
+      "projectURL": "https://github.com/aayushbh23/myResume-frontend"
     }
   ],
   "experience": [
     {
-      "company": "Company A",
-      "role": "Frontend Engineer",
-      "start": "2022-01",
+      "company": "Decor Hub",
+      "role": "Web Developer",
+      "start": "2019",
       "end": "Present",
+      "companyURL":"https://decorhub.com.au",
       "highlights": [
-        "Built a design system in React.",
-        "Improved Lighthouse perf to 95+."
+        "Built an E-Commerce store using WooCommerce on Wordpress.",
+        "Handle day to day tech issues and provided suppport."
       ]
     }
   ],
   "education": [
-    { "school": "Uni Name", "degree": "B.Sc. CS", "year": "2020" }
+    { "school": "Central Queensland University", "degree": "B.IT - Application Development", "year": "Graduating in 2026" },
+    { "school": "Skyline International College", "degree": "Advanced Diploma - Network Security", "year": "2020" },
+    { "school": "Skyline International College", "degree": "Diploma - Information Technology", "year": "2019" }
   ]
 }

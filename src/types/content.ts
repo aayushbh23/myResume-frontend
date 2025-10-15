@@ -35,10 +35,10 @@ export type Content = {
   title: string;
   location: string;
   summary: string;
+  profileURL: string;
   links: {
     email: string;
     github?: string;
-    linkedin?: string;
     website?: string;
   };
   skills: Skills[];

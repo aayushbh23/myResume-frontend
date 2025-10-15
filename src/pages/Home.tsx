@@ -11,7 +11,7 @@ export default function Home() {
         <div className="col-auto">
           <img
             className="rounded-circle"
-            src="/profile.jpg"
+            src={data.profileURL}
             alt={data.name}
             width="120"
             height="120"

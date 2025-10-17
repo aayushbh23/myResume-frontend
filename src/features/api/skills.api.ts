@@ -1,5 +1,5 @@
 import { api } from "@/services/api";
-import type { SkillsApiResponse, Skills } from "../types/skills.types";
+import type { SkillsApiResponse, Skills } from "@/types/skills.types";
 
 export const skillsApi = api.injectEndpoints({
 

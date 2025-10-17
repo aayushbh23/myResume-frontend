@@ -1,5 +1,5 @@
 import { api } from "@/services/api";
-import type { EducationApiResponse, Education } from "../types/education.types";
+import type { EducationApiResponse, Education } from "@/types/education.types";
 
 export const educationApi = api.injectEndpoints({
   endpoints: (build) => ({

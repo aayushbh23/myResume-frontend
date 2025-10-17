@@ -1,5 +1,5 @@
 import { api } from "@/services/api";
-import type { ExperienceApiResponse, Experience } from "../types/experience.types";
+import type { ExperienceApiResponse, Experience } from "@/types/experience.types";
 
 export const experienceApi = api.injectEndpoints({
   endpoints: (build) => ({

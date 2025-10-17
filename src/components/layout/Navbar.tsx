@@ -2,10 +2,6 @@ import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setNavOpen } from "@/features/ui/uiSlice";
 import { RootState } from "@/app/store";
-import content from "@/data/content.json";
-import type { Content } from "@/types/content";
-
-const data = content as Content;
 
 export default function Navbar() {
   const dispatch = useDispatch();
@@ -15,7 +11,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom">
       <div className="container">
         <NavLink className="navbar-brand fw-bold" to="/">
-          {data.name}
+          Ayush Bhandari
         </NavLink>
 
         <button

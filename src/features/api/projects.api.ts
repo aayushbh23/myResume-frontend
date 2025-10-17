@@ -1,5 +1,5 @@
 import { api } from "@/services/api";
-import type { ProjectsApiResponse, Project } from "../types/projects.types";
+import type { ProjectsApiResponse, Project } from "@/types/projects.types";
 
 export const projectsApi = api.injectEndpoints({
   endpoints: (build) => ({

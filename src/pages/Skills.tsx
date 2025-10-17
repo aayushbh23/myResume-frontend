@@ -2,7 +2,7 @@ import { useGetSkillsQuery } from "@/features/api/skills.api";
 import { SkillStars } from "@/components/SkillStars";
 
 export default function Skills() {
-  const { data, isLoading, isError, refetch } = useGetSkillsQuery();
+  const { data = [], isLoading, isError, refetch } = useGetSkillsQuery();
 
   if (isLoading) {
     return (
@@ -42,7 +42,7 @@ export default function Skills() {
     <section>
       <h2 className="mb-4">Skills</h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        {data.skills.map((s) => (
+        {data.map((s) => (
           <div className="col" key={s.name}>
             <div className="card h-100 border-success project-card">
               <div className="card-body">

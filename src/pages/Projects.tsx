@@ -2,7 +2,7 @@ import { useGetProjectsQuery } from "@/features/api/projects.api";
 
 export default function Projects() {
 
-  const { data, isLoading, isError, refetch } = useGetProjectsQuery();
+  const { data = [], isLoading, isError, refetch } = useGetProjectsQuery();
 
   if (isLoading) {
     return (
@@ -46,7 +46,7 @@ export default function Projects() {
     <section>
       <h2 className="mb-4">Projects</h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        {data.projects.map((p) => (
+        {data.map((p) => (
           <div className="col" key={p._id}>
             <div className="card h-100 border-success project-card">
               {p.projectURL && (

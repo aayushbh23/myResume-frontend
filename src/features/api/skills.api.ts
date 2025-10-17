@@ -5,12 +5,9 @@ export const skillsApi = api.injectEndpoints({
 
   endpoints: (build) => ({
 
-    getSkills: build.query<Skill[] | null, void>({
+    getSkills: build.query<Skill[], void>({
       query: () => "/skills",
-      transformResponse: (res: SkillsApiResponse) => {
-        if (!res?.success) return null;
-        return res.data ?? [];
-      },
+      transformResponse: (res: SkillsApiResponse) => (res?.success ? res.data ?? [] : []),
       providesTags: [{ type: "Skills", id: "LIST" }],
     }),
 

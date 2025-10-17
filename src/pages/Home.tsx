@@ -1,9 +1,37 @@
-import content from "@/data/content.json";
-import type { Content } from "@/types/content";
-
-const data = content as Content;
+import { useGetHomeProfileQuery } from "@/features/api/home.api";
 
 export default function Home() {
+  const { data, isLoading, isError, refetch } = useGetHomeProfileQuery();
+
+if (isLoading) {
+    return (
+      <section className="container py-5">
+        <div className="placeholder-glow">
+          <div className="d-flex gap-3 align-items-center">
+            <span className="placeholder rounded-circle" style={{ width: 120, height: 120 }} />
+            <div className="w-100">
+              <h1 className="placeholder col-7"></h1>
+              <p className="placeholder col-5"></p>
+            </div>
+          </div>
+          <p className="placeholder col-8 mt-4"></p>
+          <p className="placeholder col-6"></p>
+        </div>
+      </section>
+    );
+  }
+
+  if (isError || !data) {
+    return (
+      <section className="container py-5">
+        <div className="alert alert-danger d-flex justify-content-between align-items-center">
+          <span>Failed to load profile.</span>
+          <button className="btn btn-sm btn-light" onClick={() => refetch()}>Retry</button>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section>
       <h2 className="mb-4"></h2>

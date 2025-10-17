@@ -3,12 +3,9 @@ import type { EducationApiResponse, Education } from "../types/education.types";
 
 export const educationApi = api.injectEndpoints({
   endpoints: (build) => ({
-    getEducation: build.query<Education[] | null, void>({
+    getEducation: build.query<Education[], void>({
       query: () => "/education",
-      transformResponse: (res: EducationApiResponse) => {
-        if (!res?.success) return null;
-        return res.data ?? [];
-      },
+      transformResponse: (res: EducationApiResponse) => (res?.success ? res.data ?? [] : []),
       providesTags: [{ type: "Education", id: "LIST" }],
     }),
 

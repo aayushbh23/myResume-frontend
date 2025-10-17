@@ -3,12 +3,10 @@ import type { ExperienceApiResponse, Experience } from "../types/experience.type
 
 export const experienceApi = api.injectEndpoints({
   endpoints: (build) => ({
-    getExperience: build.query<Experience[] | null, void>({
+
+    getExperience: build.query<Experience[], void>({
       query: () => "/experience",
-      transformResponse: (res: ExperienceApiResponse) => {
-        if (!res?.success) return null;
-        return res.data ?? [];
-      },
+      transformResponse: (res: ExperienceApiResponse) => (res?.success ? res.data ?? [] : []),
       providesTags: [{ type: "Experience", id: "LIST" }],
     }),
 

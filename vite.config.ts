@@ -14,7 +14,7 @@ export default defineConfig({
     open: true,
     proxy: {
       "/api": {
-        target: "http://localhost:4000",
+        target: "https://myresume-backend-wqc0.onrender.com",
         changeOrigin: true,
       },
     }

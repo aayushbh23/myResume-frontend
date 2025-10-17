@@ -1,9 +1,5 @@
 import { useGetExperienceQuery } from "@/features/api/experience.api";
 import { useGetEducationQuery } from "@/features/api/education.api";
-// import content from "@/data/content.json";
-// import type { Content } from "@/types/content";
-
-// const data = content as Content;
 
 function DateRange({ start, end }: { start: string; end: string }) {
   return (

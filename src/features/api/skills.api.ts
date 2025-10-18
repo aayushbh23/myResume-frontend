@@ -5,13 +5,13 @@ export const skillsApi = api.injectEndpoints({
 
   endpoints: (build) => ({
 
-    getSkills: build.query<Skill[], void>({
+    getSkills: build.query<Skills[], void>({
       query: () => "/skills",
       transformResponse: (res: SkillsApiResponse) => (res?.success ? res.data ?? [] : []),
       providesTags: [{ type: "Skills", id: "LIST" }],
     }),
 
-    updateSkill: build.mutation<Skill, { id: string; data: Partial<Skill> }>({
+    updateSkills: build.mutation<Skills, { id: string; data: Partial<Skills> }>({
       query: ({ id, data }) => ({
         url: `/skills/${id}`,
         method: "PUT",
@@ -24,4 +24,4 @@ export const skillsApi = api.injectEndpoints({
   overrideExisting: false,
 });
 
-export const { useGetSkillsQuery, useUpdateSkillMutation } = skillsApi;
+export const { useGetSkillsQuery, useUpdateSkillsMutation } = skillsApi;

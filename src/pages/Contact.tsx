@@ -2,7 +2,7 @@ import { useGetHomeProfileQuery } from "@/features/api/home.api";
 
 export default function Contact() {
 
-const { data = [], isLoading, isError, refetch } = useGetHomeProfileQuery();
+const { data, isLoading, isError, refetch } = useGetHomeProfileQuery();
 
   if (isLoading) {
     return (

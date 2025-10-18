@@ -12,14 +12,14 @@ function DateRange({ start, end }: { start: string; end: string }) {
 export default function Resume() {
 
   const {
-    data: eduData,
+    data: eduData = [],
     isLoading: eduLoading,
     isError: eduError,
     refetch: refetchEdu,
   } = useGetEducationQuery();
 
   const {
-    data: expData,
+    data: expData = [],
     isLoading: expLoading,
     isError: expError,
     refetch: refetchExp,
